@@ -256,13 +256,13 @@
 
 	release()
 
-/obj/item/weapon/trap/animal/Collide(AM as mob|obj)
+/obj/item/weapon/trap/animal/Bump(atom/AM)
 	if(isliving(AM))
 		Crossed(AM)
 	else
 		..()
 
-/obj/item/weapon/trap/animal/CollidedWith(atom/AM)
+/obj/item/weapon/trap/animal/Bumped(atom/AM)
 	if(isliving(AM))
 		Crossed(AM)
 	else
